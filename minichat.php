@@ -54,7 +54,7 @@
     echo '<ul>';
     while ($donnees = $reponse->fetch()) 
     {
-        echo '<li><strong>' . $donnees['pseudo'] . ' : </strong>' . $donnees['message'] . '</li>';
+        echo '<li><strong>' . htmlspecialchars($donnees['pseudo']) . ' : </strong>' . htmlspecialchars($donnees['message']) . '</li>';
     }
     echo '</ul>';
 
