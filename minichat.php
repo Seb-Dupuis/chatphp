@@ -6,7 +6,6 @@ $pseudo = (!empty($_COOKIE['pseudo'])) ? $_COOKIE['pseudo'] : "" ;
 <html lang="fr">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
