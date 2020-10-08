@@ -1,5 +1,9 @@
+<?php
+$pseudo = (!empty($_COOKIE['pseudo'])) ? $_COOKIE['pseudo'] : "" ;
+
+?>
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags -->
@@ -23,8 +27,9 @@
         <form method="POST" action="minichat_post.php " class="col-lg-6 offset-lg-3 ">
         <div class="row justify-content-center">
 
-                <label for="pseudo" class="">Votre pseudo</label>
-                    <input type="text" id="pseudo" name="pseudo" />
+                <label for="pseudo" class="" >Votre pseudo</label>
+
+                    <input type="text" id="pseudo" name="pseudo" value="<?php echo $pseudo ;?>" />
 
 <br>
 <br>
